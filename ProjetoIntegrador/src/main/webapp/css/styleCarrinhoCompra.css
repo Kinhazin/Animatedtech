@@ -1,0 +1,420 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f3f0;
+}
+
+.cabecalho {
+    padding-left: 50px;
+    width: 100%;
+    height: 104px;
+    border: 2px solid black;
+    background-image: url(../includes/LOGOTIPO.png);
+    background-repeat: no-repeat;
+    background-size: 81px;
+    background-position-x: 37px;
+    background-position-y: 13px;
+}
+
+.cabecalho_sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 130px
+}
+
+.cabecalho_sec input {
+    margin-top: 39px;
+    margin-left: 239px;
+    width: 1100px;
+    height: 36px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 4px;
+
+}
+
+input::placeholder {
+    font-family: "Inter";
+    font-weight: 600;
+    padding-left: 20px;
+    font-size: 0.8rem;
+    font-style: italic;
+
+}
+
+input {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.cabecalho_sec_links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 5px;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+
+
+.cabecalho_sec_links .cabecalho_sec_links__grupo {
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.cabecalho_sec_links__grupo a {
+    flex-direction: column;
+    gap: 3px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 0.75rem;
+    color: black;
+    width: auto;
+
+}
+
+a img {
+    margin-right: 5px;
+}
+
+a span {
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    text-align: center;
+    gap: 5px;
+}
+
+.compras-link {
+    padding-bottom: 10px !important;
+}
+
+.meio {
+    padding-top: 63px;
+    padding-left: 120px;
+    width: 100%;
+    height: 774px;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    background-image: url(../includes/CARRINHO-CLIENTE_FUNDO_MEIO.png);
+    background-size: contain;
+}
+
+.meio_carrinho {
+    width: 92%;
+    height: 700px;
+    display: flex;
+    gap:7.6%;
+    flex-flow: row wrap;
+    
+}
+
+.meio_carrinho_produto {
+    width: 1110px;
+    height: 300px;
+    border: 3px black solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.preco {
+    width: 144%;
+    height: 89%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.meio_carrinho_produtos_preco {
+    width: 23%;
+    height: 530px;
+}
+
+.resumoPedido {
+    width: 100%;
+    height: 295px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #f2f3f0;
+}
+
+.valorProduto {
+    width: 100%;
+    height: 95px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.valorProduto .res {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.valorFrete .res {
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+}
+
+.Valores {
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.valorFrete {
+    width: 100%;
+    height: 115px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.valorPix {
+    width: 100%;
+    height: 84px;
+    padding: 10px;
+    align-content: flex-end;
+}
+
+.meio_carrinho_produtos_preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.meio_carrinho_produto_descricao {
+    width: 100%;
+    height: 195px;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+}
+
+.meio_carrinho_produto_detalhamento {
+    width: 600px;
+    height: auto;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+.meio_carrinho_produto_foto {
+    width: 160px;
+    height: 160px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: url(../includes/AMD_CARRINHO.webp);
+    background-size: contain;
+}
+
+@media (max-width: 1440px) {
+    .meio_carrinho_produto {
+        width: 892px;
+        height: 300px;
+    }
+
+    .preco {
+        width: 110%;
+    }
+
+    .meio_carrinho_produtos_preco {
+        width: 25%;
+    }
+
+    .meio_carrinho {
+        gap: 12px;
+    }
+}
+
+.endereco h1 {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.endereco {
+    padding: 15px;
+    width: 100%;
+    height: 208px;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: #f2f3f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.endereco p {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.endereco_principal {
+    width: 100%;
+    height: auto;
+}
+
+.endereco_principal h1 {
+    margin-bottom: 5px;
+}
+
+.entrega-correios {
+    width: 100%;
+    height: 76px;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.entrega-correios label {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entrega-correios input[type="radio"] {
+    transform: translateY(150%);
+    margin-right: 10px;
+}
+
+.preco2 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.meio_carrinho_finalizar{
+    width: 100%;
+    height: 77px;
+}
+
+.meio_carrinho_finalizar button{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.meio_carrinho_finalizar button:hover{
+    cursor: pointer;
+}
+
+.rodape {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape__logos {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+
+}
+
+.rodape__logos__textos {
+    font-size: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textinhos {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cabecalho__Logo__Logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+
+    width: 210px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px
+}

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh; 
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f3f0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 10.16%;
+    border: 2px solid black; 
+}
+
+.cabecalho__Logo{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__Logo__Logotipo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+
+    width: 178px;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+.meio{
+    width: 100%;
+    height: 75.68%;
+    border-right:2px black solid ;
+    border-left: 2px black solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../includes/CADASTROCLIENTE_FUNDO.png');
+    background-attachment: fixed;
+    background-size: cover;
+
+    border-right:2px black solid ;
+    border-left: 2px black solid;
+    
+}
+
+.cadastro{
+    width: 383px;
+    height: 650px;
+    background-color: white;
+    border:2px black solid ;
+}
+
+.cadastro__Formulario{
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    background-color: white;
+}
+
+.cadastro__Formulario__Titulo{
+    width: 100%;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;   
+    margin-bottom: 5px;
+}
+
+.cadastro__Formulario__label{
+    width: 100%;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+.cadastro__Formulario__inputs{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    height: 35px; 
+}
+
+.cadastro__Formulario__botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #ff6b6b;
+    border: 3px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__texto__termos{
+    width: 100%;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.rodape{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape__logos{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+
+}
+
+.rodape__logos__textos{
+    font-size: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.textinhos{
+    text-align: center;
+    margin-bottom:10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f3f0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 10.16%;
+    border: 2px solid black;
+}
+
+.cabecalho__Logo {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__Logo__Logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+
+    width: 210px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+.meio {
+    width: 100%;
+    height: 781px;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(../includes/CADASTRO-PRODUTOS_FUNDO.png);
+}
+
+.cadastroProdutos {
+    height: 100%;
+    width: 90%;
+}
+
+.CadastroProdutos__div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario__div {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img1{
+    height: auto;
+    width: 50%;
+    background-image:url(../includes/DEMONIO.png);
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;}
+    
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 900;
+    padding:10px;
+}
+
+.div1, .div2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div2{
+    width: 323px;
+}
+
+.CadstroProdutos__Formulario {
+    width: 50%;
+    height: auto;
+}
+
+.formulario {
+    padding: 15px;
+    width: 660px;
+    height: 608px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.L1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.L2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap:5px;
+        padding: 0px;
+}
+
+label {
+    padding: 0px 0px 0px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+
+}
+
+input {
+    border: 3px black solid;
+    border-radius: 13px;
+    background-color: white;
+    height: 43px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px;
+
+}
+
+button[type="submit"]{
+    transform: translateX(1190px) translateY(20px);
+    height: 54px ;
+    width: 298px;
+    background-color: #F989C3;
+    color: white;
+}
+
+.imagem1 {
+    width: 750px;
+    height: auto;
+    background-image: url(/includes/DEMONIO.png);
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1440px){
+    button[type="submit"]{
+        transform: translateX(810px) translateY(20px);
+    }
+}
+
+
+input[id="fornecedor"]{
+    width: 273px; 
+}
+
+input[id="nome-produto"]{
+    width: 305px; 
+}
+
+textarea {
+    border: 3px black solid;
+    border-radius: 13px;
+    background-color: white;
+    width: 610px;
+    height: 71px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+input::placeholder {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+textarea::placeholder {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+
+
+button {
+    border: 3px solid black;
+    height: 43px;
+    width: 120px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button[type="reset"] {
+    border: 3px solid black;
+    background-color: white;
+    height: 43px;
+    width: 120px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.rodape {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape__logos {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+
+}
+
+.rodape__logos__textos {
+    font-size: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textinhos {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

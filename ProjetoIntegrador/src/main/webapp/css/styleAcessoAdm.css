@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f3f0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 10.16%;
+    border: 2px solid black;
+}
+
+.cabecalho__Logo {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__Logo__Logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+
+    width: 210px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+.meio{
+    width:100%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+}
+
+.selecao{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.selecaoDiv1, .selecaoDiv2, .selecaoDiv3{
+    width: 292px;
+    height: 380px;
+    border: 3px black solid;
+    border-radius: 13px;
+}
+
+.selecaoDiv1 .img{
+    background-color: #FE9ACE;
+    border-radius: 13px;
+    background-image: url(../includes/MINI-DEMO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-start-end-radius:0px ;
+}
+
+.selecaoDiv2 .img{
+    background-color: #e0e0e0;
+    border-radius: 13px;
+    background-image: url(../includes/GATUNO.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 4px;
+}
+
+.selecaoDiv3 .img{
+    background-color: #79E05E;
+    border-radius: 13px;
+    background-image: url(../includes/MINI-FLOR.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 14px;
+}
+
+.meio p{
+    width: 100%;
+    height: 63px;
+    background-color:#e0e0e0;
+    font-size: 1.4rem;
+    font-family: Inter;
+    font-size: 900;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    border-top:2px black solid ;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img{
+    width: 100%;
+    height: 310px;
+}
+
+.rodape {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape__logos {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+
+}
+
+.rodape__logos__textos {
+    font-size: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textinhos {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
