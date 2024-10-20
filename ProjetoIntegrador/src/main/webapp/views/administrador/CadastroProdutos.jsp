@@ -39,34 +39,34 @@
 							<div class="div1">
 								<label for="fornecedor">Fornecedor</label> <input type="text"
 									id="fornecedor" name="fornecedor"
-									placeholder="Fornecedor do produto">
+									placeholder="Fornecedor do produto" value="${param.fornecedor}" >
 							</div>
 							<div class="div2">
 								<label for="nome-produto">Nome do produto</label> <input
 									type="text" id="nomeProduto" name="nomeProduto"
-									placeholder="Título do produto">
+									placeholder="Título do produto" value="${param.nomeProduto}">
 							</div>
 						</div>
 						<div class="L2">
 							<label for="codigo-produto">Código do produto</label> <input
 								type="text" id="codigoProduto" name="codigoProduto"
-								placeholder="Título do produto">
+								placeholder="Título do produto" value="${param.codigoProduto}">
 						</div>
 						<div class="div2">
 							<label for="descricao">Descrição</label>
 							<textarea maxlength="195" id="descricao" name="descricao"
-								rows="4" placeholder="Detalhe o produto"></textarea>
+								rows="4" placeholder="Detalhe o produto" value="${param.codigoProduto}" ></textarea>
 						</div>
 
 						<div class="L2">
 							<label for="preco-unitario">Preço Unitário</label> <input
 								type="number" id="preco-unitario" name="precoUnitario"
-								placeholder="Título do produto" step="0.01">
+								placeholder="Título do produto" value="${param.precoUnitario}">
 						</div>
 						<div class="L2">
 							<label for="quantidade">Quantidade em estoque</label> <input
 								type="number" id="quantidade" name="quantidade"
-								placeholder="Título do produto">
+								placeholder="Título do produto" value="${param.quantidade}">
 						</div>
 						<div class="botoes">
 
