@@ -3,6 +3,8 @@
 **📝 PROJETO AVALIATIVO - 2° SEMESTRE: STADSCAS2NB 📝**
 
 **🏪 Animatedtech - Sua loja Cartoon 🏪**
+
+**⚠️Projeto em andamento⚠️**
 <br><br>
 ## SOBRE
 O projeto *"**Animatedtech - Seu e-commerce desenhado**"* desenvolvido como avaliação semestral da matéria “Projeto Integrador”, tem o foco no desenvolvimento web de um e-commerce de peças eletrônicas, utilizando tecnologias como JSP, HTML, e CSS para a criação da interface e a integração com o banco de dados para gerenciamento das informações.
