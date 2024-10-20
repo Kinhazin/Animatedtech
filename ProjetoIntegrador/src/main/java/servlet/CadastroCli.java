@@ -43,7 +43,7 @@ public class CadastroCli extends HttpServlet {
 
 			if (CPF == null || CPF.trim().isEmpty()) {
 				throw new Exception("O CPF é obrigatório.");
-			} else if (CPF.length() != 11 || !CPF.matches("\\d+")) {
+			} else if (CPF.length() != 11) {
 				throw new Exception("O CPF deve conter 11 dígitos.");
 			}
 
