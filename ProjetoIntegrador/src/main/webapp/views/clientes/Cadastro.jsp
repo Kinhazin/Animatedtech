@@ -3,7 +3,7 @@
 <%@ page import="servlet.CadastroCli"%>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 <meta charset="UTF-8">
@@ -38,20 +38,21 @@
 					action="${pageContext.request.contextPath}/CadastroCli"
 					method="post">
 					<label for="nome" class="cadastro__Formulario__label">Nome</label>
-					<input type="input" id="nome" name="nome"
-						class="cadastro__Formulario__inputs"> <label for="email"
+					<input type="input" id="nome" name="nome" value="${param.nome}"
+						class="cadastro__Formulario__inputs"> 
+						<label for="email"
 						class="cadastro__Formulario__label">E-mail</label> <input
-						type="email" id="email" name="email"
+						type="email" id="email" name="email" value="${param.email}"
 						class="cadastro__Formulario__inputs"> <label for="CPF"
 						class="cadastro__Formulario__label">CPF</label> <input
-						type="input" id="CPF" name="CPF"
+						type="input" id="CPF" name="CPF" value="${param.CPF}"
 						class="cadastro__Formulario__inputs" maxlength="11"> <label
 						for="password" class="cadastro__Formulario__label">Senha</label> <input
-						type="input" id="password" name="password"
+						type="input" id="password" name="password" value="${param.password}"
 						class="cadastro__Formulario__inputs"> <label
 						for="passwordConfirm" class="cadastro__Formulario__label">Digite
 						a senha novamente</label> <input type="input" id="passwordConfirm"
-						name="passwordConfirm" class="cadastro__Formulario__inputs">
+						name="passwordConfirm" class="cadastro__Formulario__inputs" value="${param.passwordConfirm}">
 
 					<button type="submit" class="cadastro__Formulario__botao">Criar
 						conta</button>
