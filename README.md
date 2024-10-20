@@ -18,7 +18,7 @@ O projeto *"**Animatedtech - Seu e-commerce desenhado**"* desenvolvido como aval
 <img src="https://github.com/Kinhazin/Animatedtech/blob/main/Visual/CadastroUsuario.png?raw=true">
 
 ### LOJA:
-### Páginia principal
+### Página principal
 <img src="https://github.com/Kinhazin/Animatedtech/blob/main/Visual/TelaPrincipal.png?raw=true">
 
 ### Carrinho
