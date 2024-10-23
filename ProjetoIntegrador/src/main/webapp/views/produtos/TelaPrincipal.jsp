@@ -16,7 +16,7 @@
             <input type="text" maxlength="50" placeholder="DIGITE O PRODUTO QUE DESEJA COMPRAR">
             <div class="cabecalho_sec_links">
                 <div class="cabecalho_sec_links__grupo">
-                    <a href="${pageContext.request.contextPath}/views/produtos/FaleConosco">
+                    <a href="${pageContext.request.contextPath}/views/produtos/FaleConosco.jsp">
                         <img src="${pageContext.request.contextPath}/includes/ENTRE_EM_CONTATO.png" height="40px">
                         <span>
                             <div>
