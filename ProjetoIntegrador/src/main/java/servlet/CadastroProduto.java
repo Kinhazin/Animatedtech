@@ -72,6 +72,6 @@ public class CadastroProduto extends HttpServlet {
 			request.setAttribute("sucesso", "Cadastro realizado com sucesso!");
 		}
 
-		request.getRequestDispatcher("/views/cliente/CadastroProdutos.jsp").forward(request, response);
+		request.getRequestDispatcher("/views/administrador/CadastroProdutos.jsp").forward(request, response);
 	}
 }

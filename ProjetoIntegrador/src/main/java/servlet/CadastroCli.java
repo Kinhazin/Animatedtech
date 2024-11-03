@@ -27,7 +27,7 @@ public class CadastroCli extends HttpServlet {
 		try {
 			String nome = request.getParameter("nome");
 			String email = request.getParameter("email");
-			String CPF = request.getParameter("CPF");
+			String cpf = request.getParameter("CPF");
 			String password = request.getParameter("password");
 			String passwordConfirm = request.getParameter("passwordConfirm");
 
@@ -41,9 +41,9 @@ public class CadastroCli extends HttpServlet {
 				throw new Exception("Formato de email inválido.");
 			}
 
-			if (CPF == null || CPF.trim().isEmpty()) {
+			if (cpf == null || cpf.trim().isEmpty()) {
 				throw new Exception("O CPF é obrigatório.");
-			} else if (CPF.length() != 11 || !CPF.matches("\\d+")) {
+			} else if (cpf.length() != 11) {
 				throw new Exception("O CPF deve conter 11 dígitos.");
 			}
 
@@ -57,10 +57,10 @@ public class CadastroCli extends HttpServlet {
 				throw new Exception("As senhas não são iguais.");
 			}
 
-			int CPFs = Integer.parseInt(CPF);
+			long numeroCpf = Long.parseLong(cpf);
 
 		} catch (NumberFormatException ex) {
-			request.setAttribute("erro", "Somente número no CPF");
+			request.setAttribute("erro", "Somente números no CPF");
 			numErros++;
 		} catch (Exception e) {
 			request.setAttribute("erro", e.getMessage());
@@ -71,6 +71,6 @@ public class CadastroCli extends HttpServlet {
 			request.setAttribute("sucesso", "Cadastro realizado com sucesso!");
 		}
 
-		request.getRequestDispatcher("/views/cliente/Cadastro.jsp").forward(request, response);
+		request.getRequestDispatcher("/views/clientes/Cadastro.jsp").forward(request, response);
 	}
 }
