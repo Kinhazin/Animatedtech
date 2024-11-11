@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="servlet.CadastroProduto"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,7 +25,7 @@
 			<div class="CadastroProdutos__div">
 				<div class="formulario__div">
 					<form class="formulario"
-						action="${pageContext.request.contextPath}/CadastroProduto"
+						action="${pageContext.request.contextPath}/ProdutosController"
 						method="post">
 						<h1>CADASTRO DE PRODUTOS</h1>
 						<c:if test="${not empty erro}">

@@ -1,14 +1,28 @@
 package br.com.animatedtech.modelos;
 
+import java.util.List;
+
 public class Cliente {
     private String nome;
     private String email;
-    private String CPF;
+    private String cpf;
     private String senha;
-    private int numeroCartao;
-    private String endereco;
 
-    public String getNome() {
+    
+    public Cliente(String nome, String email, String cpf, String senha) {
+  		this.nome = nome;
+  		this.email = email;
+  		this.cpf = cpf;
+  		this.senha = senha;
+  	}
+    
+    
+    public Cliente() {
+		super();
+	}
+
+
+	public String getNome() {
         return nome;
     }
 
@@ -25,34 +39,19 @@ public class Cliente {
     }
 
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
 
     public void setCPF(String CPF) {
-        this.CPF = CPF;
+        this.cpf = CPF;
     }
-
-    public int getNumeroCartao() {
-        return numeroCartao;
-    }
-
-    public void setNumeroCartao(int numeroCartao) {
-        this.numeroCartao = numeroCartao;
-    }
-
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
 
 	public String getSenha() {
-		return senha;
-	}
+        return senha;
+    }
 
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
 }

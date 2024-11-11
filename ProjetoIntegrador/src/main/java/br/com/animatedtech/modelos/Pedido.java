@@ -3,6 +3,7 @@ package br.com.animatedtech.modelos;
 public class Pedido {
 	private Produto produto;
 	private Cliente cliente;
+	private Endereço endereço;
 	
 
 		public String getNomeProduto() {
@@ -15,10 +16,6 @@ public class Pedido {
 
 	    public int getCodigoProduto() {
 	        return produto.getCodigoProduto();
-	    }
-
-	    public String getEndereco() {
-	        return cliente.getEndereco();
 	    }
 
 	    public void setProduto(Produto produto) {

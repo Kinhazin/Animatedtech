@@ -69,4 +69,34 @@
     <servlet-name>CadastroProduto</servlet-name>
     <url-pattern>/CadastroProduto</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClienteController</display-name>
+    <servlet-name>ClienteController</servlet-name>
+    <servlet-class>br.com.animatedtech.controller.ClienteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClienteController</servlet-name>
+    <url-pattern>/ClienteController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClientesController</display-name>
+    <servlet-name>ClientesController</servlet-name>
+    <servlet-class>br.com.animatedtech.controller.ClientesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientesController</servlet-name>
+    <url-pattern>/ClientesController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProdutosController</display-name>
+    <servlet-name>ProdutosController</servlet-name>
+    <servlet-class>br.com.animatedtech.controller.ProdutosController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProdutosController</servlet-name>
+    <url-pattern>/ProdutosController</url-pattern>
+  </servlet-mapping>
 </web-app>

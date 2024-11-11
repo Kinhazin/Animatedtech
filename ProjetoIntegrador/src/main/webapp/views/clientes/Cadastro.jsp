@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="servlet.CadastroCli"%>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -35,7 +34,7 @@
 					<p style="color: green;">${sucesso}</p>
 				</c:if>
 				<form class="formulario"
-					action="${pageContext.request.contextPath}/CadastroCli"
+					action="${pageContext.request.contextPath}/ClientesController"
 					method="post">
 					<label for="nome" class="cadastro__Formulario__label">Nome</label>
 					<input type="input" id="nome" name="nome" value="${param.nome}"
@@ -91,5 +90,4 @@
 
 </body>
 
-</html>
 </html>
