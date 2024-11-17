@@ -37,11 +37,11 @@
 				</div></a> </a>
 		</section>
 		<section class="selecao">
-			<a target="_blank" href="../administrador/CrudCliente.jsp"><div
+			<a target="_blank" href="clientes/listar"><div
 					class="selecaoDiv4">
 					<div class="img"></div>
 					<p>Crud Clientes</p>
-				</div></a> <a target="_blank" href="../administrador/CrudProdutos.jsp"><div
+				</div></a> <a target="_blank" href="produtos/listar"><div
 					class="selecaoDiv5">
 					<div class="img"></div>
 					<p>Crud Produtos</p>

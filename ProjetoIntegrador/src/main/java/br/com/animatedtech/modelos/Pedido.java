@@ -11,7 +11,7 @@ public class Pedido {
 		}
 				
 		public String getCpf() {
-			return cliente.getCPF();
+			return cliente.getCpf();
 		}
 
 	    public int getCodigoProduto() {

@@ -9,24 +9,19 @@ public class Cliente {
     private String senha;
 
     
-    public Cliente(String nome, String email, String cpf, String senha) {
+    public Cliente(final String nome, final String email, final String cpf, final String senha) {
   		this.nome = nome;
   		this.email = email;
   		this.cpf = cpf;
   		this.senha = senha;
   	}
     
-    
-    public Cliente() {
-		super();
-	}
-
 
 	public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(final String nome) {
         this.nome = nome;
     }
 
@@ -34,23 +29,23 @@ public class Cliente {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
-    public String getCPF() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCPF(String CPF) {
-        this.cpf = CPF;
+    public void setCpf(final String Cpf) {
+        this.cpf = Cpf;
     }
 
 	public String getSenha() {
         return senha;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(final String senha) {
         this.senha = senha;
     }
 

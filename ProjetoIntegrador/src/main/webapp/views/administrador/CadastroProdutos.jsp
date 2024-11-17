@@ -25,7 +25,7 @@
 			<div class="CadastroProdutos__div">
 				<div class="formulario__div">
 					<form class="formulario"
-						action="${pageContext.request.contextPath}/ProdutosController"
+						action="${pageContext.request.contextPath}/administrador/CadastroProdutos"
 						method="post">
 						<h1>CADASTRO DE PRODUTOS</h1>
 						<c:if test="${not empty erro}">

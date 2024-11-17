@@ -21,7 +21,6 @@
 			<p class="cabecalho__Logo__Logotipo">AnimatedTech</p>
 		</div>
 	</header>
-
 	<main class="meio">
 		<div class="cadastro">
 			<div class="cadastro__Formulario">
@@ -34,7 +33,7 @@
 					<p style="color: green;">${sucesso}</p>
 				</c:if>
 				<form class="formulario"
-					action="${pageContext.request.contextPath}/ClientesController"
+					action="${pageContext.request.contextPath}/clientes/Cadastro"
 					method="post">
 					<label for="nome" class="cadastro__Formulario__label">Nome</label>
 					<input type="input" id="nome" name="nome" value="${param.nome}"
@@ -42,8 +41,8 @@
 						class="cadastro__Formulario__label">E-mail</label> <input
 						type="email" id="email" name="email" value="${param.email}"
 						class="cadastro__Formulario__inputs"> <label for="CPF"
-						class="cadastro__Formulario__label">CPF</label> <input
-						type="text" id="CPF" name="CPF" value="${param.CPF}"
+						class="cadastro__Formulario__label">CPF</label> <input type="text"
+						id="CPF" name="CPF" value="${param.CPF}"
 						class="cadastro__Formulario__inputs" maxlength="11"> <label
 						for="password" class="cadastro__Formulario__label">Senha</label> <input
 						type="text" id="password" name="password"
@@ -63,7 +62,6 @@
 									de Anúncios Baseados em Interesse</u></b>.
 						</p>
 					</div>
-
 				</form>
 			</div>
 		</div>

@@ -2,11 +2,15 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
+<%@ page
+	import="br.com.animatedtech.modelos.Produto, java.util.ArrayList"%>
+	
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatorio produtos</title>
+    <title>Produtos Cadastrados</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/styleCrudProdutos.css">
 </head>
 
@@ -24,53 +28,30 @@
             <table class="tabela_crud">
                 <thead>
                     <tr>
-                        <th>ID DO PRODUTO</th>
-                        <th>NOME</th>
+                        <th>CÓDIGO DO PRODUTO</th>
+                        <th>NOME DO PRODUTO</th>
                         <th>QUANTIDADE</th>
                         <th>PREÇO</th>
                         <th>AÇÃO</th>
                     </tr>
+                    <%
+				ArrayList<Produto> listaProduto = (ArrayList<Produto>) request.getAttribute("listaProduto");
+				%>
                 </thead>
-                <tr>
-                    <td>#12354</td>
-                    <td>PC GAMER</td>
-                    <td>50</td>
-                    <td>R$5.000,00</td>
-                    <td class="imgs">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LAPIS.png" height="25px" width="auto">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LIXO.png" height="25px" width="auto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>#12354</td>
-                    <td>PC GAMER</td>
-                    <td>50</td>
-                    <td>R$5.000,00</td>
-                    <td class="imgs">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LAPIS.png" height="25px" width="auto">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LIXO.png" height="25px" width="auto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>#12354</td>
-                    <td>PC GAMER</td>
-                    <td>50</td>
-                    <td>R$5.000,00</td>
-                    <td class="imgs">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LAPIS.png" height="25px" width="auto">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LIXO.png" height="25px" width="auto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>#12354</td>
-                    <td>PC GAMER</td>
-                    <td>50</td>
-                    <td>R$5.000,00</td>
-                    <td class="imgs">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LAPIS.png" height="25px" width="auto">
-                        <img src="${pageContext.request.contextPath}/includes/CRUD_LIXO.png" height="25px" width="auto">
-                    </td>
-                </tr>
+                <c:forEach var="produto" items="${listaProduto}">
+					<tr>
+						<td>${produto.codigoProduto}</td>
+						<td>${produto.nomeProduto}</td>
+						<td>${produto.quantidadeEstoque}</td>
+						<td>${produto.precoUnidade}</td>
+						<td class="imgs"><img
+							src="${pageContext.request.contextPath}/includes/CRUD_LAPIS.png"
+							height="25px" width="auto"> <img
+							src="${pageContext.request.contextPath}/includes/CRUD_LIXO.png"
+							height="25px" width="auto"></td>
+					</tr>
+				</c:forEach>
+  
             </table>
         </section>
     </main>

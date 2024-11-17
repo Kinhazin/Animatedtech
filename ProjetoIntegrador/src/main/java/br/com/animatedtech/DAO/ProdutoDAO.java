@@ -2,7 +2,9 @@ package br.com.animatedtech.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import br.com.animatedtech.modelos.Produto;
 import br.com.animatedtech.utils.*;
@@ -37,6 +39,32 @@ public class ProdutoDAO {
 		} finally {
 			return retorno;
 		}
+	}
+	
+	public ArrayList<Produto> listar(){	
+		ArrayList<Produto> listaRetorno = new ArrayList<>();
+		String sql = "SELECT * FROM Produtos";
+		try (
+				Connection connection = ConnectionFactory.getConnection();
+				PreparedStatement preparedStatement = connection.prepareStatement(sql);
+				ResultSet rs = preparedStatement.executeQuery();
+				)
+		{
+			while (rs.next()) {
+				String nomeFornecedor = rs.getString("nomeFornecedor");
+				String nomeProduto = rs.getString("nomeProduto");
+				int codigoProduto = rs.getInt("codigoProduto");
+				String descricao = rs.getString("descricao");
+				float precoUnidade = rs.getFloat("precoUnidade");
+				int quantidadeEstoque = rs.getInt("quantidadeEstoque");
+				
+				Produto objLista = new Produto(nomeFornecedor, nomeProduto, codigoProduto, descricao, precoUnidade, quantidadeEstoque);
+				listaRetorno.add(objLista);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return listaRetorno;	
 	}
 
 }
