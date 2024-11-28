@@ -31,6 +31,7 @@
 		<section class="meio_tabela">
 			<table border="1px">
 				<tr>
+					<th id="id">ID CLIENTE</th>
 					<th id="nome">NOME</th>
 					<th id="cpf">CPF</th>
 					<th id="endereco">E-MAIL</th>
@@ -41,14 +42,19 @@
 				%>
 				<c:forEach var="cliente" items="${listaClientes}">
 					<tr>
+						<td>${cliente.idCliente}</td>
 						<td>${cliente.nome}</td>
 						<td>${cliente.cpf}</td>
 						<td>${cliente.email}</td>
-						<td class="imgs"><img
+						<td class="imgs">
+						<a href="${pageContext.request.contextPath}/clientes/editar?id=${cliente.idCliente}">
+						<img
 							src="${pageContext.request.contextPath}/includes/CRUD_LAPIS.png"
-							height="25px" width="auto"> <img
+							height="25px" width="auto"> 
+							</a>
+							<a href="${pageContext.request.contextPath}/clientes/excluir?id=${cliente.idCliente}"><img
 							src="${pageContext.request.contextPath}/includes/CRUD_LIXO.png"
-							height="25px" width="auto"></td>
+							height="25px" width="auto"></a></td>
 					</tr>
 				</c:forEach>
 			</table>

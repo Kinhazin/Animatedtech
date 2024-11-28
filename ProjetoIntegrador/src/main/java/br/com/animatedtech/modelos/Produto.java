@@ -7,8 +7,9 @@ public class Produto {
     private String descricao;
     private float precoUnidade;
     private int quantidadeEstoque;
+    private int idProduto;
     
-    public Produto(String nomeFornecedor, String nomeProduto, int codigoProduto, String descricao, float precoUnidade,
+	public Produto(String nomeFornecedor, String nomeProduto, int codigoProduto, String descricao, float precoUnidade,
 			int quantidadeEstoque) {
 		this.nomeFornecedor = nomeFornecedor;
 		this.nomeProduto = nomeProduto;
@@ -17,6 +18,27 @@ public class Produto {
 		this.precoUnidade = precoUnidade;
 		this.quantidadeEstoque = quantidadeEstoque;
 	}
+	
+	public Produto(String nomeFornecedor, String nomeProduto, int codigoProduto, String descricao, float precoUnidade,
+			int quantidadeEstoque, int idProduto) {
+		this.nomeFornecedor = nomeFornecedor;
+		this.nomeProduto = nomeProduto;
+		this.codigoProduto = codigoProduto;
+		this.descricao = descricao;
+		this.precoUnidade = precoUnidade;
+		this.quantidadeEstoque = quantidadeEstoque;
+		this.idProduto = idProduto;
+	}
+	
+	
+	 public int getIdProduto() {
+			return idProduto;
+		}
+
+
+		public void setIdProduto(int idProduto) {
+			this.idProduto = idProduto;
+		}
 
 
     public String getNomeFornecedor() {

@@ -56,7 +56,7 @@
 				</form>
 			</div>
 		</div>
-		<a href="Cadastro.jsp" class="criarConta">Criar sua conta na
+		<a href="CadastroCliente.jsp" class="criarConta">Criar sua conta na
 			AnimatedTech</a>
 	</main>
 	<footer class="rodape">

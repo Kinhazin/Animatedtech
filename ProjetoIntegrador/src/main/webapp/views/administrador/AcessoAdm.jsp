@@ -26,14 +26,14 @@
 					class="selecaoDiv1">
 					<div class="img"></div>
 					<p>Cadastrar</p>
-				</div></a> <a target="_blank" href="../administrador/RelatorioCliente.jsp"><div
+				</div></a> <a target="_blank" href="${pageContext.request.contextPath}/clientes/relatorio"><div
 					class="selecaoDiv2">
 					<div class="img"></div>
-					<p>Dados cliente</p>
+					<p>Relatorio analitico</p>
 				</div></a> <a target="_blank" href="../administrador/RelatorioProduto.jsp"><div
 					class="selecaoDiv3">
 					<div class="img"></div>
-					<p>Dados produtos</p>
+					<p>Relatório sintetico</p>
 				</div></a> </a>
 		</section>
 		<section class="selecao">
@@ -46,6 +46,10 @@
 					<div class="img"></div>
 					<p>Crud Produtos</p>
 				</div></a>
+				  <a target="_blank" href="../notafiscal/CadastrarNota.jsp"><div class="selecaoDiv6">
+                <div class="img"></div>
+                <p>Cadastrar nota</p>
+            </div></a>
 		</section>
 	</main>
 	<footer class="rodape">

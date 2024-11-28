@@ -10,13 +10,20 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import br.com.animatedtech.DAO.ProdutoDAO;
+import br.com.animatedtech.DAO.RelatorioSinteticoDAO;
+import br.com.animatedtech.modelos.Cliente;
 import br.com.animatedtech.modelos.Produto;
+import br.com.animatedtech.modelos.RelatorioSintetico;
 import br.com.animatedtech.utils.ConnectionFactory;
 
-@WebServlet(name = "produtos", urlPatterns = {"/administrador/CadastroProdutos", "/views/administrador/CadastroProdutos","/views/administrador/produtos/listar","/administrador/produtos/listar" ,"/produtos/listar"})
+@WebServlet(name = "produtos", urlPatterns = {"/administrador/CadastroProdutos", "/views/administrador/CadastroProdutos","/views/administrador/produtos/listar","/administrador/produtos/listar" ,
+		"/produtos/listar","/views/administrador/produtos/excluir", "/produtos/excluir", "/administrador/produtos/excluir", "/produtos/editar", "/produtos/updates", "/administrador/relatoriosintetico" })
 public class ProdutosController extends HttpServlet {
 	private static final long serialVersionUID = 1L;    
 	public ProdutoDAO produtoDAO = null;
@@ -42,11 +49,24 @@ public class ProdutosController extends HttpServlet {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("/views/administrador/CrudProdutos.jsp");
 				dispatcher.forward(request, response);
 				break;
+			case "/produtos/editar":
+				editarForm(request, response);
+				break;
+			case "/produtos/updates":
+				update(request, response);
+				break;
+			case "/produtos/excluir":
+				excluir(request, response);
+				break;
+				
+			case "/administrador/relatoriosintetico":
+				relatorioSintetico(request, response);
+				break;
 			default:
 				listar(request, response);
 				break;
 			}
-		} catch (SQLException ex) {
+		} catch (SQLException | ParseException ex) {
 			throw new ServletException(ex);
 		}
 
@@ -131,6 +151,62 @@ public class ProdutosController extends HttpServlet {
 		
 		request.setAttribute("listaProduto", listaProduto);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/administrador/CrudProdutos.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	private void excluir(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		produtoDAO.excluir(id);
+		response.sendRedirect("listar");
+	}
+	
+	private void editarForm(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		Produto produtoAlterar = produtoDAO.buscarPorId(id);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/administrador/AtualizarProdutos.jsp");
+		request.setAttribute("produto", produtoAlterar);
+		dispatcher.forward(request, response);
+	}
+	
+	private void update(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+	    int id = Integer.parseInt(request.getParameter("id"));
+	    String nomeFornecedor = request.getParameter("fornecedor"); 
+	    String nomeProduto = request.getParameter("nomeProduto"); 
+	    int codigoProduto = Integer.parseInt(request.getParameter("codigoProduto")); 
+	    String descricao = request.getParameter("descricao");
+	    String precoUnitario = request.getParameter("precoUnitario"); 
+	    Float precoUnidade = Float.valueOf(precoUnitario);
+	    int quantidadeEstoque = Integer.parseInt(request.getParameter("quantidade"));
+
+	    Produto produtoAtualizar = new Produto(nomeFornecedor, nomeProduto, codigoProduto, descricao, precoUnidade, quantidadeEstoque, id);
+	    produtoDAO.atualizar(produtoAtualizar);
+	    response.sendRedirect("listar");
+	}
+	
+	private void relatorioSintetico(HttpServletRequest request, HttpServletResponse response) throws SQLException,
+	IOException, ServletException, ParseException {
+		 String dataInicio = request.getParameter("comeco");
+	     String dataFim = request.getParameter("fim");
+
+
+         // Definindo o formato de data original (yyyy-MM-dd)
+         SimpleDateFormat originalFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+         // Convertendo as strings para objetos Date
+         Date utilDateInicio = originalFormat.parse(dataInicio);
+         Date utilDateFim = originalFormat.parse(dataFim);
+
+         // Convertendo para java.sql.Date para manipulação no banco de dados
+         java.sql.Date sqlDateInicio = new java.sql.Date(utilDateInicio.getTime());
+         java.sql.Date sqlDateFim = new java.sql.Date(utilDateFim.getTime());
+         
+         System.out.println(sqlDateInicio);
+	     
+		ArrayList<RelatorioSintetico> relatorioLista = RelatorioSinteticoDAO.listarPorPeriodo(sqlDateInicio,sqlDateFim);
+		
+		System.out.println("Tamanho da lista depois da consulta: " + relatorioLista.size());
+		request.setAttribute("relatorioLista", relatorioLista);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/administrador/RelatorioProduto.jsp");
 		dispatcher.forward(request, response);
 	}
 

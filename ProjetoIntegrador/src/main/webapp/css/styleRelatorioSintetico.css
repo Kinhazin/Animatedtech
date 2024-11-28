@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f3f0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 10.16%;
+    border: 2px solid black;
+}
+
+.cabecalho__Logo {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__Logo__Logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+
+    width: 210px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+.meio {
+    width: 100%;
+    height: 777px;
+    background-image: url(../includes/RELATORIO-PRODUTO_FUNDO.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-y: -90px;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 170px 30px 170px;
+}
+
+.secFormulario {
+    width: 600px;
+    height: 702px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 25px 45px 25px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.datas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.datas p {
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: Inter;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="date"] {
+    height: 41px;
+    width: 188px;
+    border: 3px black solid;
+    border-radius: 13px;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.imprimir {
+    width: 425px;
+    height: 64px;
+    border: 3px black solid;
+    border-radius: 13px;
+    background-color: #FF5D0D;
+    color: white;
+    font-size: Montserrat;
+    font-weight: 900;
+    font-size: 1.9rem;
+}
+
+.imprimir:hover{
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px black solid;
+    font-family: Inter;
+    text-align: center;
+    font-size: 0.9;
+}
+
+.imagem{
+    width: 500px;
+    height: 720px;
+}
+
+.vaso{
+    transform: translateX(100px) translateY(-20px);
+}
+
+.girassol{
+    transform: translateX(40px) translateY(65px);
+}
+
+@media(max-width:1440px){
+    .imagem{
+        width: 500px;
+        height: 720px;
+    }
+    
+    .vaso{
+        transform: translateX(100px) translateY(-20px);
+    }
+    
+    .girassol{
+        transform: translateX(40px) translateY(65px);
+    }
+
+    .meio{
+        justify-content: space-between;
+        padding: 30px 100px 30px 100px;
+    }
+}
+
+td,
+th {
+    width: 140px;
+    height: 30px;
+}
+
+h1 {
+    font-size: 1.9rem;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.rodape {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape__logos {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.rodape__logos__textos {
+    font-size: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textinhos {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

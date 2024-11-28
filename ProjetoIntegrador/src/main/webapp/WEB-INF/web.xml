@@ -99,4 +99,24 @@
     <servlet-name>ProdutosController</servlet-name>
     <url-pattern>/ProdutosController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NotaFiscalController</display-name>
+    <servlet-name>NotaFiscalController</servlet-name>
+    <servlet-class>br.com.animatedtech.controller.NotaFiscalController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NotaFiscalController</servlet-name>
+    <url-pattern>/NotaFiscalController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RelatorioSinteticoController</display-name>
+    <servlet-name>RelatorioSinteticoController</servlet-name>
+    <servlet-class>br.com.animatedtech.controller.RelatorioSinteticoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RelatorioSinteticoController</servlet-name>
+    <url-pattern>/RelatorioSinteticoController</url-pattern>
+  </servlet-mapping>
 </web-app>

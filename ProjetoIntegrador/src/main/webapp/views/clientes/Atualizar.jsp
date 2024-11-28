@@ -33,27 +33,26 @@
 					<p style="color: green;">${sucesso}</p>
 				</c:if>
 				<form class="formulario"
-					action="${pageContext.request.contextPath}/clientes/Cadastro"
-					method="post">
+					action="${cliente == null ? 'cadastro' : 'update'}"method="post">
+
 					<label for="nome" class="cadastro__Formulario__label">Nome</label>
-					<input type="input" id="nome" name="nome" value="${param.nome}"
+					<input type="input" id="nome" name="nome" value="${cliente.nome}"
 						class="cadastro__Formulario__inputs"> <label for="email"
 						class="cadastro__Formulario__label">E-mail</label> <input
-						type="email" id="email" name="email" value="${param.email}"
+						type="email" id="email" name="email" value="${cliente.email}"
 						class="cadastro__Formulario__inputs"> <label for="CPF"
 						class="cadastro__Formulario__label">CPF</label> <input type="text"
-						id="CPF" name="CPF" value="${param.CPF}"
+						id="CPF" name="CPF" value="${cliente.cpf}"
 						class="cadastro__Formulario__inputs" maxlength="11"> <label
 						for="password" class="cadastro__Formulario__label">Senha</label> <input
-						type="text" id="password" name="password"
-						value="${param.password}" class="cadastro__Formulario__inputs">
-					<label for="passwordConfirm" class="cadastro__Formulario__label">Digite
+						type="text" id="password" name="password" value="${cliente.senha}"
+						class="cadastro__Formulario__inputs"> <label
+						for="passwordConfirm" class="cadastro__Formulario__label">Digite
 						a senha novamente</label> <input type="text" id="passwordConfirm"
 						name="passwordConfirm" class="cadastro__Formulario__inputs"
-						value="${param.passwordConfirm}">
-
-					<button type="submit" class="cadastro__Formulario__botao">Criar
-						conta</button>
+						value="${cliente.senha}"> <input type="hidden"
+						name="id" value="${cliente.idCliente}">
+					<button type="submit" class="cadastro__Formulario__botao">Atualizar cadastro</button>
 					<div class="formulario__texto">
 						<p class="formulario__texto__termos">
 							Ao continuar, você concorda com as <b><u>Condições de Uso</u></b>
