@@ -37,6 +37,49 @@ Confira a documentação completa do projeto clicando [aqui](https://drive.googl
 
 ## Capturas de Tela do Projeto:
 
+### Login
+![Login](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Login.jpeg?raw=true)
+
+### Cadastro de clientes
+![Cadastro](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Cadastro.jpeg?raw=true)
+
+### Tela Principal
+![Tela Principal](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Telaprincipal.jpeg?raw=true)
+
+### Carrinho
+![Carrinho](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Carrinho.jpeg?raw=true)
+
+### Fale Conosco
+![Fale Conosco](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Faleconosco.jpeg?raw=true)
+
+### Acesso Administrativo
+![Acesso Administrativo](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Acessoadministrativo.jpeg?raw=true)
+
+### Cadastro de Produtos
+![Cadastro de Produtos](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Cadastrodeprodutos.jpeg?raw=true)
+
+### Atualizar Cadastro de Produtos
+![Atualizar Cadastro de Produtos](https://github.com/Kinhazin/Animatedtech/blob/main/visual/AtaulizarCadastrodeprodutos.jpeg?raw=true)
+
+### Atualizar Cadastro de clientes
+![Atualizar Cadastro](https://github.com/Kinhazin/Animatedtech/blob/main/visual/AtualizarCadastro.jpeg?raw=true)
+
+### Clientes Cadastrados
+![Clientes Cadastrados](https://github.com/Kinhazin/Animatedtech/blob/main/visual/ClientesCadastrados.jpeg?raw=true)
+
+### Produtos Cadastrados
+![Produtos Cadastrados](https://github.com/Kinhazin/Animatedtech/blob/main/visual/ProdutosCadastrados.jpeg?raw=true)
+
+### Gravar Nota Fiscal
+![Gravar Nota Fiscal](https://github.com/Kinhazin/Animatedtech/blob/main/visual/GravarNotaFiscal.jpeg?raw=true)
+
+### Relatório geral
+![Relatório de Produtos](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Relatorioprodutos.jpeg?raw=true)
+
+### Relatório detalhado
+![Relatório de detalhado](https://github.com/Kinhazin/Animatedtech/blob/main/visual/Relat%C3%B3riodeprodutos.jpeg?raw=true)
+
+
 
 
 
